@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.banner {
+    height: 580px;
+    background: url('https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: left;
+}
+
+.banner h1 {
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.1rem;
+}
+
+.menu {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 10px;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.content {
+    background: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background: white;
+}
+
+.image-card {
+    text-align: center;
+    margin: 10px;
+}
+
+.image-card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.image-card h3 {
+    font-size: 1.3rem;
+    color: blue;
+    margin: 10px 0 5px;
+}
+
+.image-card p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+footer {
+    height: 40px;
+    background: #333;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 17px;
+}
