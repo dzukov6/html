@@ -1,127 +1,104 @@
-/* General Styles */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
+    background-color: #e0e0e0;
     display: flex;
-    justify-content: center; /* Center horizontally */
+    justify-content: center;
+    margin: 0;
 }
 
-/* Wrapper for centered layout with white background */
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+.container {
+    width: 1200px;
+    background-color: white;
 }
 
-/* Banner */
-.banner {
-    background: url('https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png') no-repeat center center/cover;
+header {
+    background: url('https://coolbackgrounds.io/') no-repeat center center/cover;
     height: 580px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
-    color: white;
     padding: 20px;
-    text-align: left;
+    color: white;
 }
 
-.banner h1 {
+.banner-content {
+    margin-left: 20px;
+}
+
+h1 {
     font-size: 2.2rem;
     margin: 0;
 }
 
-.banner p {
+p {
     font-size: 1.1rem;
 }
 
-.menu {
-    text-align: right;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
 }
 
-.menu a {
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 17px;
-    margin: 0 10px;
-    padding: 5px 10px;
-    transition: background-color 0.3s;
 }
 
-.menu a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-}
-
-/* Content Section */
 .content {
     text-align: center;
-    margin: 60px auto;
-    padding: 60px 0;
+    padding: 60px 20px;
 }
 
 .content h2 {
     font-size: 2rem;
-    color: #000;
+    color: black;
 }
 
 .content p {
     font-size: 17px;
     line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
-/* Gallery Section */
-.gallery {
+.image-gallery {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 40px 0;
-    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-.gallery article {
-    flex: 1 1 calc(25% - 20px);
+.image-item {
     text-align: center;
-    background: #fff;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
-.gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+.image-item img {
+    width: 250px;
+    height: 250px;
 }
 
-.gallery h3 {
+.image-item h3 {
     font-size: 1.3rem;
-    color: #007BFF;
-    margin: 10px 0 5px;
+    color: blue;
 }
 
-.gallery p {
+.image-item p {
     font-size: 0.95rem;
     line-height: 1.8;
 }
 
-.gallery .price {
-    font-size: 1.2rem;
-    color: #333;
-    font-weight: bold;
-    margin-top: 10px;
+.price {
+    font-size: 1.3rem;
+    color: blue;
 }
 
-/* Footer */
 footer {
-    background: #333;
-    color: white;
+    height: 40px;
     text-align: center;
-    padding: 10px 0;
     font-size: 17px;
+    padding-top: 10px;
 }
