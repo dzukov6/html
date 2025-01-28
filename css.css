@@ -8,6 +8,7 @@ body {
 .container {
     width: 1200px;
     background-color: white;
+    padding: 20px;
 }
 
 header {
@@ -69,11 +70,14 @@ nav ul li a {
 .image-gallery {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 20px;
 }
 
 .image-item {
     text-align: center;
+    width: 250px;
 }
 
 .image-item img {
