@@ -1,4 +1,4 @@
-/* Taust */
+/* Üldine taust */
 body {
     background-color: #e0e0e0;
     display: flex;
@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 
-/* Lehe konteiner */
+/* Peamine konteiner */
 .container {
     width: 1200px;
     background-color: white;
