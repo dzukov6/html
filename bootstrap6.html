@@ -30,6 +30,12 @@
       background-color: #28a745;
       color: white;
     }
+    .sidebar-box {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
@@ -73,7 +79,7 @@
   <div class="row">
     <div class="col-md-8">
       <h1>Sinu postitus</h1>
-      <p>Autor: Sinu Nimi <span class="badge badge-warning">Bootstrap</span> <span class="badge badge-info">CSS</span></p>
+      <p>Autor: Daniel Zukov <span class="badge badge-warning">Bootstrap</span> <span class="badge badge-info">CSS</span></p>
       <small>30.02.2020</small>
       <img src="https://www.stockvault.net/data/2007/03/01/102413/preview16.jpg" class="img-fluid mt-3 mb-3" alt="Postitus pilt">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel felis ac eros consequat pulvinar.</p>
@@ -82,18 +88,22 @@
     </div>
 
     <div class="col-md-4">
-      <h4>Kategooriad</h4>
-      <ul class="list-unstyled">
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">CSS</a></li>
-        <li><a href="#">Bootstrap</a></li>
-        <li><a href="#">JavaScript</a></li>
-        <li><a href="#">PHP</a></li>
-        <li><a href="#">MySQL</a></li>
-      </ul>
+      <div class="sidebar-box">
+        <h4>Kategooriad</h4>
+        <ul class="list-unstyled">
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">Bootstrap</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">PHP</a></li>
+          <li><a href="#">MySQL</a></li>
+        </ul>
+      </div>
 
-      <h4>Muu info</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit nisi nec urna feugiat, ac molestie ligula aliquam. Integer facilisis orci at purus pharetra mollis. Fusce sagittis metus at nibh faucibus dignissim.</p>
+      <div class="sidebar-box">
+        <h4>Muu info</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit nisi nec urna feugiat, ac molestie ligula aliquam. Integer facilisis orci at purus pharetra mollis. Fusce sagittis metus at nibh faucibus dignissim.</p>
+      </div>
     </div>
   </div>
 </div>
