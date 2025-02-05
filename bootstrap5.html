@@ -12,6 +12,7 @@
       background-size: cover;
       color: white;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      border-radius: 0;
     }
     .card-img-top {
       width: 100%;
@@ -22,9 +23,41 @@
       font-size: 2rem;
       margin: 0 10px;
     }
+    .navbar-dark .navbar-nav .nav-link {
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .login-btn {
+      background-color: #28a745;
+      color: white;
+    }
   </style>
 </head>
 <body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><i class="fas fa-rocket"></i> [Zukov]</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#minuMenyy" aria-controls="minuMenyy" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="minuMenyy">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Avaleht</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Epood</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Kassa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Kontakt</a>
+      </li>
+    </ul>
+    <button class="btn login-btn"><i class="fas fa-sign-in-alt"></i> Logi sisse</button>
+  </div>
+</nav>
 
 <div class="jumbotron text-center">
   <h1 class="display-4">Jumbotron</h1>
