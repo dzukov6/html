@@ -3,98 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Blog Layout</title>
+  <title>Minu Blogi</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
-    .navbar {
-      background-color: #007bff;
-    }
     .jumbotron {
-      background-color: #f8f9fa;
+      background: url('https://www.stockvault.net/data/2007/03/01/102413/preview16.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
       border-radius: 0;
     }
-    .card {
-      margin-bottom: 20px;
+    .card-img-top {
+      width: 100%;
+      height: 15vw;
+      object-fit: cover;
     }
-    .list-unstyled {
-      padding-left: 0;
+    .social-icons i {
+      font-size: 2rem;
+      margin: 0 10px;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .login-btn {
+      background-color: #28a745;
+      color: white;
     }
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <a class="navbar-brand" href="#">Minu Blogi</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <i class="fas fa-rocket"></i> Minu blogi
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#minuMenyy" aria-controls="minuMenyy" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+
+  <div class="collapse navbar-collapse" id="minuMenyy">
+    <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Avaleht</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Blog</a>
+        <a class="nav-link" href="#">Epood</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">CV</a>
+        <a class="nav-link" href="#">Kassa</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Kontakt</a>
       </li>
     </ul>
+    <button class="btn login-btn"><i class="fas fa-sign-in-alt"></i> Logi sisse</button>
   </div>
 </nav>
 
 <div class="container mt-4">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Blog</a></li>
+      <li class="breadcrumb-item"><a href="#">Veebitehnoloogia</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Sinupostitus</li>
+    </ol>
+  </nav>
+
   <div class="row">
-    <!-- Main Content -->
     <div class="col-md-8">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Blog</a></li>
-          <li class="breadcrumb-item"><a href="#">Veebitehnoloogia</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Sinu postitus</li>
-        </ol>
-      </nav>
-
-      <h1 class="mb-3">Sinu postitus</h1>
-      <p><strong>Autor:</strong> <a href="#">Sinu Nimi</a> <small class="text-muted">30.02.2020</small></p>
-      <span class="badge badge-warning">Bootstrap</span>
-
-      <img src="https://images.pexels.com/photos/339465/pexels-photo-339465.jpeg" alt="Post image" class="img-fluid rounded mb-4">
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eros odio, tincidunt in orci ac, blandit varius libero.</p>
-      <p>Donec vehicula augue sit amet ipsum sagittis, vel pharetra lorem varius. Phasellus ut felis lacus.</p>
-
-      <p class="lead">Praesent volutpat justo a turpis fermentum, ut fermentum velit vestibulum.</p>
+      <h1>Sinu postitus</h1>
+      <p>Autor: Sinu Nimi <span class="badge badge-warning">Bootstrap</span> <span class="badge badge-info">CSS</span></p>
+      <small>30.02.2020</small>
+      <img src="https://www.stockvault.net/data/2007/03/01/102413/preview16.jpg" class="img-fluid mt-3 mb-3" alt="Postitus pilt">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel felis ac eros consequat pulvinar.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Nullam malesuada dapibus malesuada. Quisque pellentesque augue eros, quis consequat nisi pellentesque a. Etiam at metus id ipsum scelerisque facilisis. Nullam id sapien id mi auctor tincidunt.</p>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut lorem et urna molestie tempor. Praesent vestibulum turpis ligula, non feugiat urna dictum sed.</p>
     </div>
 
-    <!-- Sidebar -->
     <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Kategooriad</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">Bootstrap</a></li>
-            <li><a href="#">JavaScript</a></li>
-            <li><a href="#">PHP</a></li>
-            <li><a href="#">MySQL</a></li>
-          </ul>
-        </div>
-      </div>
+      <h4>Kategooriad</h4>
+      <ul class="list-unstyled">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Bootstrap</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">PHP</a></li>
+        <li><a href="#">MySQL</a></li>
+      </ul>
 
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Muu info</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non dictum erat.</p>
-        </div>
-      </div>
+      <h4>Muu info</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit nisi nec urna feugiat, ac molestie ligula aliquam. Integer facilisis orci at purus pharetra mollis. Fusce sagittis metus at nibh faucibus dignissim.</p>
     </div>
   </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
