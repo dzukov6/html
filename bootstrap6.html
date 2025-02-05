@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Blog Layout</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    .navbar {
+      background-color: #007bff;
+    }
+    .jumbotron {
+      background-color: #f8f9fa;
+      border-radius: 0;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+    .list-unstyled {
+      padding-left: 0;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#">Minu Blogi</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Avaleht</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CV</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Kontakt</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="row">
+    <!-- Main Content -->
+    <div class="col-md-8">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Blog</a></li>
+          <li class="breadcrumb-item"><a href="#">Veebitehnoloogia</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Sinu postitus</li>
+        </ol>
+      </nav>
+
+      <h1 class="mb-3">Sinu postitus</h1>
+      <p><strong>Autor:</strong> <a href="#">Sinu Nimi</a> <small class="text-muted">30.02.2020</small></p>
+      <span class="badge badge-warning">Bootstrap</span>
+
+      <img src="https://images.pexels.com/photos/339465/pexels-photo-339465.jpeg" alt="Post image" class="img-fluid rounded mb-4">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eros odio, tincidunt in orci ac, blandit varius libero.</p>
+      <p>Donec vehicula augue sit amet ipsum sagittis, vel pharetra lorem varius. Phasellus ut felis lacus.</p>
+
+      <p class="lead">Praesent volutpat justo a turpis fermentum, ut fermentum velit vestibulum.</p>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Kategooriad</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">MySQL</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Muu info</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non dictum erat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
