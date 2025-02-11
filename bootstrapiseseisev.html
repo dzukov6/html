@@ -13,21 +13,28 @@
             background-color: #007bff;
             color: white;
             text-align: center;
-            padding: 50px 20px;
+            padding: 80px 20px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.2rem;
         }
         .features {
             text-align: center;
-            padding: 40px 20px;
+            padding: 60px 20px;
         }
         .blueprints {
-            padding: 40px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
         .blueprint-box {
             background: #dfefff;
             width: 100%;
             max-width: 600px;
-            height: 300px;
+            height: 400px;
             margin: 20px auto;
             display: flex;
             align-items: center;
@@ -36,37 +43,48 @@
             color: #007bff;
         }
         .testimonials, .pricing {
-            padding: 40px 20px;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .testimonial-card {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+        }
+        .pricing .card {
+            padding: 20px;
             text-align: center;
         }
         .footer {
             background-color: #007bff;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 40px 0;
         }
     </style>
 </head>
 <body>
     <header class="hero">
         <h1>Make A Beautiful Website</h1>
-        <p>Experience the simplicity and power of our website design</p>
-        <button class="btn btn-light">Get Started</button>
+        <p>Generator helps you achieve goals faster with Development, Prototyping, Design.</p>
+        <button class="btn btn-light">Download Now</button>
+        <button class="btn btn-outline-light">Learn more now</button>
     </header>
 
     <section class="features container">
         <div class="row">
             <div class="col-md-4">
                 <h3>Feature 1</h3>
-                <p>Feature description goes here.</p>
+                <p>Description of feature 1.</p>
             </div>
             <div class="col-md-4">
                 <h3>Feature 2</h3>
-                <p>Feature description goes here.</p>
+                <p>Description of feature 2.</p>
             </div>
             <div class="col-md-4">
                 <h3>Feature 3</h3>
-                <p>Feature description goes here.</p>
+                <p>Description of feature 3.</p>
             </div>
         </div>
     </section>
@@ -80,8 +98,10 @@
     <section class="testimonials container">
         <h2>What people say</h2>
         <div class="row">
-            <div class="col-md-6">“Testimonial 1”</div>
-            <div class="col-md-6">“Testimonial 2”</div>
+            <div class="col-md-6 testimonial-card">“Testimonial 1”</div>
+            <div class="col-md-6 testimonial-card">“Testimonial 2”</div>
+            <div class="col-md-6 testimonial-card">“Testimonial 3”</div>
+            <div class="col-md-6 testimonial-card">“Testimonial 4”</div>
         </div>
     </section>
 
@@ -91,7 +111,7 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <h3>Starter</h3>
+                        <h3>Startup</h3>
                         <p>$9.90/month</p>
                         <button class="btn btn-primary">Choose Plan</button>
                     </div>
@@ -110,10 +130,10 @@
     </section>
 
     <footer class="footer">
-        <p>Subscribe to our newsletter</p>
+        <h3>Subscribe</h3>
         <input type="email" placeholder="Enter your email" class="form-control w-25 d-inline">
         <button class="btn btn-light">Subscribe</button>
-        <p>&copy; 2024 Beautiful Website</p>
+        <p>&copy; 2024 Beautiful Website | Disclaimer | Contact</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
