@@ -4,138 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beautiful Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-        .hero {
+        .header {
             background-color: #007bff;
             color: white;
             text-align: center;
-            padding: 80px 20px;
+            padding: 50px 20px;
         }
-        .hero h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-        .hero p {
-            font-size: 1.2rem;
+        .header button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            background-color: white;
+            color: #007bff;
+            cursor: pointer;
         }
         .features {
             text-align: center;
-            padding: 60px 20px;
+            padding: 50px 20px;
+        }
+        .feature-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .feature {
+            width: 30%;
+            padding: 20px;
         }
         .blueprints {
-            padding: 60px 20px;
-            text-align: center;
-        }
-        .blueprint-box {
-            background: #dfefff;
-            width: 100%;
-            max-width: 600px;
-            height: 400px;
-            margin: 20px auto;
             display: flex;
-            align-items: center;
             justify-content: center;
-            font-size: 24px;
-            color: #007bff;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 50px 20px;
         }
-        .testimonials, .pricing {
-            padding: 60px 20px;
-            text-align: center;
-        }
-        .testimonial-card {
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
+        .blueprints div {
+            width: 600px;
+            height: 1100px;
+            background-color: lightblue;
             margin: 10px;
-        }
-        .pricing .card {
-            padding: 20px;
             text-align: center;
+            line-height: 1100px;
+        }
+        .pricing {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .pricing .plan {
+            display: inline-block;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            width: 200px;
         }
         .footer {
             background-color: #007bff;
             color: white;
             text-align: center;
-            padding: 40px 0;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-    <header class="hero">
+    <div class="header">
         <h1>Make A Beautiful Website</h1>
         <p>Generator helps you achieve goals faster with Development, Prototyping, Design.</p>
-        <button class="btn btn-light">Download Now</button>
-        <button class="btn btn-outline-light">Learn more now</button>
-    </header>
-
-    <section class="features container">
-        <div class="row">
-            <div class="col-md-4">
-                <h3>Feature 1</h3>
-                <p>Description of feature 1.</p>
-            </div>
-            <div class="col-md-4">
-                <h3>Feature 2</h3>
-                <p>Description of feature 2.</p>
-            </div>
-            <div class="col-md-4">
-                <h3>Feature 3</h3>
-                <p>Description of feature 3.</p>
-            </div>
+        <button>Download Now</button>
+        <button>Learn more now</button>
+    </div>
+    <div class="features">
+        <h2>Features</h2>
+        <div class="feature-list">
+            <div class="feature">Feature 1</div>
+            <div class="feature">Feature 2</div>
+            <div class="feature">Feature 3</div>
         </div>
-    </section>
-
-    <section class="blueprints container">
-        <h2>Blueprints</h2>
-        <div class="blueprint-box">600 x 1100</div>
-        <div class="blueprint-box">600 x 1100</div>
-    </section>
-
-    <section class="testimonials container">
-        <h2>What people say</h2>
-        <div class="row">
-            <div class="col-md-6 testimonial-card">“Testimonial 1”</div>
-            <div class="col-md-6 testimonial-card">“Testimonial 2”</div>
-            <div class="col-md-6 testimonial-card">“Testimonial 3”</div>
-            <div class="col-md-6 testimonial-card">“Testimonial 4”</div>
-        </div>
-    </section>
-
-    <section class="pricing container">
+    </div>
+    <div class="blueprints">
+        <div>600 x 1100</div>
+        <div>600 x 1100</div>
+    </div>
+    <div class="pricing">
         <h2>Pricing Plans</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h3>Startup</h3>
-                        <p>$9.90/month</p>
-                        <button class="btn btn-primary">Choose Plan</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h3>Business</h3>
-                        <p>$19.90/month</p>
-                        <button class="btn btn-primary">Choose Plan</button>
-                    </div>
-                </div>
-            </div>
+        <div class="plan">
+            <h3>Startup</h3>
+            <p>$9.90</p>
+            <button>Choose Plan</button>
         </div>
-    </section>
-
-    <footer class="footer">
+        <div class="plan">
+            <h3>Business</h3>
+            <p>$19.90</p>
+            <button>Choose Plan</button>
+        </div>
+    </div>
+    <div class="footer">
         <h3>Subscribe</h3>
-        <input type="email" placeholder="Enter your email" class="form-control w-25 d-inline">
-        <button class="btn btn-light">Subscribe</button>
-        <p>&copy; 2024 Beautiful Website | Disclaimer | Contact</p>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <input type="email" placeholder="Email">
+        <button>Subscribe</button>
+        <p>&copy; 2017 | Disclaimer | Contact</p>
+    </div>
 </body>
 </html>
