@@ -57,6 +57,7 @@
             <label class="form-check-label" for="noustumine">
                 Olen tutvunud ja nõus <a href="#">privaatsustingimustega</a>
             </label>
+            <div class="invalid-feedback">Palun nõustu privaatsustingimustega!</div>
         </div>
 
         <button type="submit" class="btn btn-primary mt-3">Registreeru</button>
@@ -81,6 +82,16 @@
                 valjund.classList.remove("is-invalid");
             }
         });
+
+        let noustumine = document.getElementById("noustumine");
+        if (!noustumine.checked) {
+            noustumine.classList.add("is-invalid");
+            noustumine.nextElementSibling.nextElementSibling.style.display = "block"; // Näita invalid-feedback
+            onVigu = true;
+        } else {
+            noustumine.classList.remove("is-invalid");
+            noustumine.nextElementSibling.nextElementSibling.style.display = "none"; // Peida invalid-feedback
+        }
 
         if (!onVigu) {
             alert("Registreerimine edukas!");
