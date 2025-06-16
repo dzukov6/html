@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jumbotron</title>
+  <title>Zukov – Jumbotron</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
@@ -13,33 +13,39 @@
       color: white;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
       border-radius: 0;
+      padding: 4rem 2rem;
     }
-    .card-img-top {
+    .card-img-top, iframe.card-img-top {
       width: 100%;
-      height: 15vw;
+      height: 200px;
       object-fit: cover;
     }
-    .social-icons i {
-      font-size: 2rem;
-      margin: 0 10px;
-    }
-    .navbar-dark .navbar-nav .nav-link {
-      color: rgba(255, 255, 255, 0.9);
+    iframe.card-img-top {
+      border: none;
     }
     .login-btn {
       background-color: #28a745;
       color: white;
     }
+    .login-btn i {
+      margin-right: 5px;
+    }
+    .card-footer a {
+      color: #333;
+      margin: 0 10px;
+      font-size: 1.5rem;
+    }
+    .card-footer a:hover {
+      color: #28a745;
+    }
   </style>
 </head>
 <body>
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><i class="fas fa-rocket"></i> [Zukov]</a>
+  <a class="navbar-brand" href="#"><i class="fas fa-rocket"></i> Zukov</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#minuMenyy" aria-controls="minuMenyy" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="minuMenyy">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
@@ -58,17 +64,14 @@
     <button class="btn login-btn"><i class="fas fa-sign-in-alt"></i> Logi sisse</button>
   </div>
 </nav>
-
 <div class="jumbotron text-center">
-  <h1 class="display-4">Jumbotron</h1>
+  <h1 class="display-4">Tere tulemast!</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
-
-<div class="container">
+<div class="container mb-5">
   <div class="row">
-    <!-- First Card -->
     <div class="col-md-4">
-      <div class="card">
+      <div class="card h-100">
         <img class="card-img-top" src="https://images.pexels.com/photos/13471546/pexels-photo-13471546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image">
         <div class="card-body">
           <h5 class="card-title">Magna dolore ut</h5>
@@ -84,10 +87,8 @@
         </div>
       </div>
     </div>
-
-    <!-- Second Card -->
     <div class="col-md-4">
-      <div class="card">
+      <div class="card h-100">
         <img class="card-img-top" src="https://images.pexels.com/photos/30337812/pexels-photo-30337812/free-photo-of-stylish-woman-posing-by-rustic-wooden-door.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image">
         <div class="card-body">
           <h5 class="card-title">Sit amet Minim</h5>
@@ -103,11 +104,9 @@
         </div>
       </div>
     </div>
-
-    <!-- Third Card -->
     <div class="col-md-4">
-      <div class="card">
-        <iframe class="card-img-top" src="https://www.youtube.com/embed/Reu01KxMSF0" frameborder="0" allowfullscreen></iframe>
+      <div class="card h-100">
+        <iframe class="card-img-top" src="https://www.youtube.com/embed/Reu01KxMSF0" allowfullscreen></iframe>
         <div class="card-body">
           <h5 class="card-title">Nostrud aliquip ex</h5>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -124,7 +123,6 @@
     </div>
   </div>
 </div>
-
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
