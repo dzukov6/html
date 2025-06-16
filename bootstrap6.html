@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,77 +8,75 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
-    <i class="fas fa-rocket"></i> Minu blogi
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#minuMenyy" aria-controls="minuMenyy" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="minuMenyy">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Avaleht</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Epood</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Kassa</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Kontakt</a>
-      </li>
-    </ul>
-    <button class="btn btn-success"><i class="fas fa-sign-in-alt"></i> Logi sisse</button>
-  </div>
-</nav>
-
-<div class="container mt-4">
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Blog</a></li>
-      <li class="breadcrumb-item"><a href="#">Veebitehnoloogia</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Minupostitus</li>
-    </ol>
+<div class="bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-dark container">
+    <a class="navbar-brand" href="#"><i class="fas fa-pen-nib"></i> Minu Blogi</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menyy" aria-controls="menyy" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menyy">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Avaleht</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Epood</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Kassa</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+      </ul>
+    </div>
   </nav>
-
+</div>
+<div class="container mt-4">
   <div class="row">
     <div class="col-md-8">
-      <h1>Minu postitus</h1>
-      <p>Autor: Daniel Zukov <span class="badge badge-warning">Bootstrap</span> <span class="badge badge-info">CSS</span></p>
-      <small>30.02.2020</small>
-      <img src="https://www.stockvault.net/data/2007/03/01/102413/preview16.jpg" class="img-fluid mt-3 mb-3" alt="Postitus pilt">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Blogi</a></li>
+          <li class="breadcrumb-item"><a href="#">Veebitehnoloogia</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Minu postitus</li>
+        </ol>
+      </nav>
+      <h2>Minu postitus</h2>
+      <p><a href="#">Daniel Zukov</a> <small>30.02.2020</small></p>
+      <p><small><span class="badge badge-primary">Bootstrap</span> <span class="badge badge-success">Front-end</span></small></p>
+      <img src="https://www.stockvault.net/data/2007/03/01/102413/preview16.jpg" class="img-fluid rounded mb-3" alt="Postituse pilt">
+      <p class="lead">See on postituse sissejuhatav lõik, mis tõmbab lugeja tähelepanu ja annab kiire ülevaate teemast.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum, purus in eleifend sollicitudin, lacus risus fermentum massa, eget pulvinar elit turpis ac neque.</p>
+      <p>Curabitur non diam vitae sapien malesuada vulputate. Aliquam erat volutpat. Mauris sit amet nunc ac elit tincidunt tristique in nec justo.</p>
     </div>
-
     <div class="col-md-4">
-      <div class="card mb-3">
+      <div class="card mb-4">
+        <div class="card-header">
+          Kategooriad
+        </div>
         <div class="card-body">
-          <h5 class="card-title">Kategooriad</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">Bootstrap</a></li>
-            <li><a href="#">JavaScript</a></li>
-            <li><a href="#">PHP</a></li>
-            <li><a href="#">MySQL</a></li>
-          </ul>
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">Bootstrap</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">MySQL</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-      
       <div class="card">
+        <div class="card-header">
+          Muu info
+        </div>
         <div class="card-body">
-          <h5 class="card-title">Muu info</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+          <p>Siin on lisainfot blogi, autori või muude teemade kohta. Võid lisada siia statistikat, uudiseid või muid viiteid.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
