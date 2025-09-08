@@ -1,97 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="et">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jumbotron</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <style>
-    .jumbotron-custom {
-      background: url('https://images.pexels.com/photos/30352190/pexels-photo-30352190/free-photo-of-traditional-braiding-of-woman-s-hair-outdoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center;
-      background-size: cover;
-      color: white;
-      padding: 5rem 2rem;
-      text-align: center;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jumbotron</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+      .jumbo{
+        background-image: url(https://images.pexels.com/photos/30352190/pexels-photo-30352190/free-photo-of-traditional-braiding-of-woman-s-hair-outdoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        color:black;
+        text-align: center;
+      }
+      .card-img-top {
+        width: 100%;
+        height: 15vw;
+        object-fit: cover;
     }
-    .card-img-top, iframe.card-img-top {
-      height: 200px;
-      object-fit: cover;
-    }
-    iframe.card-img-top {
-      width: 100%;
-      border: none;
-    }
-    .card-footer a {
-      color: #333;
-      margin: 0 10px;
-    }
-    .card-footer a:hover {
-      color: #0d6efd;
-    }
-  </style>
-</head>
-<body>
-  <div class="jumbotron-custom">
-    <h1 class="display-3 fw-bold">Tere tulemast!</h1>
-    <p class="lead">See on jumbotron, mis tõmbab tähelepanu ja annab lühikese tutvustuse.</p>
-  </div>
-  <div class="container my-5">
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card h-100 shadow">
-          <img src="https://images.pexels.com/photos/13471546/pexels-photo-13471546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Pilt 1">
-          <div class="card-body">
-            <h5 class="card-title">Magna dolore ut</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <span class="badge bg-primary">Mustikas</span>
-            <span class="badge bg-secondary">Nam</span>
-            <span class="badge bg-success">Kook</span>
-          </div>
-          <div class="card-footer text-center">
-            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-          </div>
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="p-5 mb-4 bg-body-tertiary jumbo">
+        <div class="container-fluid py-5">
+          <h1 class="display-5  text-center">Jumbotron</h1>
+          <p class="text-center">See on jumbotron, mis tõmbab tähelepanu ja annab lühikese tutvustuse.</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card h-100 shadow">
-          <img src="https://images.pexels.com/photos/30337812/pexels-photo-30337812/free-photo-of-stylish-woman-posing-by-rustic-wooden-door.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Pilt 2">
-          <div class="card-body">
-            <h5 class="card-title">Sit amet Minim</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <span class="badge bg-primary">Ajalugu</span>
-            <span class="badge bg-secondary">Inimene</span>
-            <span class="badge bg-success">Uks</span>
-          </div>
-          <div class="card-footer text-center">
-            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://images.pexels.com/photos/13471546/pexels-photo-13471546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Magna dolore ut</h5>
+              <span class="badge bg-primary">Mustikas</span>
+              <span class="badge bg-secondary">Nam</span>
+              <span class="badge bg-success">Kook</span>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-apple"></i>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card h-100 shadow">
-          <iframe class="card-img-top" src="https://www.youtube.com/embed/Reu01KxMSF0" allowfullscreen></iframe>
-          <div class="card-body">
-            <h5 class="card-title">Nostrud aliquip ex</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <span class="badge bg-primary">Loodus</span>
-            <span class="badge bg-secondary">Ilm</span>
-            <span class="badge bg-success">Vesi</span>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://images.pexels.com/photos/30337812/pexels-photo-30337812/free-photo-of-stylish-woman-posing-by-rustic-wooden-door.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Magna dolore ut</h5>
+              <span class="badge text-bg-primary">Lorem</span>
+              <span class="badge text-bg-danger">Impsum</span>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-apple"></i>
+            </div>
           </div>
-          <div class="card-footer text-center">
-            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <iframe width="100%" height="275" src="https://www.youtube.com/embed/HifljNDTP6U?si=lPkY1eI8H1qL6DuX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="card-img-top"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Sit amet Minim</h5>
+              <span class="badge bg-primary">Ajalugu</span>
+              <span class="badge bg-secondary">Inimene</span>
+              <span class="badge bg-success">Uks</span>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, molestias. Commodi, nulla placeat? Quibusdam similique, velit obcaecati consectetur, hic voluptatibus dicta sit, nobis quam natus molestias iure. Molestias, animi laudantium.</p>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-apple"></i>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
